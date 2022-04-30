@@ -1,0 +1,158 @@
+* {
+  font-family: 'Red Hat Display', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: lime;
+  padding: 1rem;
+}
+
+/*Selector por anidación*/
+/*Permite seleccionar elementos que se encuentren dentro de algún otro elemento o que se encuentren anidados dentro de algún otro selector*/
+
+header nav {
+  background-color: green;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem;
+}
+
+header nav .main-nav {
+  width: fit-content;
+  margin: 1rem 0 1rem auto;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin-left: auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  padding: 0.5rem 1rem;
+}
+
+header nav ul li.active {
+  text-transform: uppercase;
+}
+/*pseudoclases: me permiten asignar reglas a los selectores como resultado de algún estado especial en el elemento 
+
+element:pseudoclass
+
+#my-id:hover
+
+*/
+
+header nav ul li:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+header nav ul li a:active {
+  color: #333;
+}
+
+header nav ul li a:visited {
+  color: red;
+}
+
+input {
+  height: 40px;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #acacac;
+  padding-left: 1rem;
+}
+input:focus {
+  background-color: #fff;
+}
+
+/*Selector de descendiente directo*/
+aside nav > ul {
+  border: 1px solid red;
+}
+
+ul li.selected {
+  border: 1px solid red;
+}
+
+/*Selector de subsecuentes*/
+
+ul li.selected ~ li {
+  color: #acacac;
+}
+
+/*Selector de elemento adyacente*/
+
+ul li.selected + li {
+  text-transform: uppercase;
+}
+
+.test-list li:first-of-type {
+  background-color: slateblue;
+}
+
+.test-list li:last-of-type {
+  background-color: gray;
+}
+
+.test-list li:nth-of-type(6),
+.test-list li:nth-of-type(9),
+.test-list li:nth-of-type(2) {
+  background-color: peru;
+}
+
+.test-list li:nth-of-type(odd) {
+  background-color: lightblue;
+}
+
+.test-list li:nth-of-type(even) {
+  background-color: lightyellow;
+}
+
+.test-list li:nth-of-type(3n + 5) {
+  color: red;
+}
+
+.test-list li.selected {
+  font-size: 2rem;
+}
+
+input[type='text'] {
+  border: 2px solid purple;
+}
+
+input:not([type='text']) {
+  border: 2px solid tomato;
+}
+
+*[class^='square'] {
+  width: 100px;
+  height: 100px;
+  border: 2px solid peru;
+}
+
+.square-blue {
+  background: blue;
+}
+
+.note-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: lightgray;
+  background-image: url('https://tse4.mm.bing.net/th?id=OIP.z4MvM7A-C6l1kUa7mkiAGwHaHa&pid=Api');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-peru {
+  color: peru;
+}

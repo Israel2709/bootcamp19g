@@ -1,0 +1,88 @@
+/*Selector universal: Selecciona todos los elementos de mi documento de HTML*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/*Selector por tagname:Selecciona los elementos cuyo tagname corresponda al indicado en el selector*/
+
+p,
+h1 {
+  text-decoration: underline;
+}
+
+/*Selector por clase: seleccionar todos los elementos que pertenezcan a la clase indicada en el selector*/
+
+.btn {
+  height: 40px;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.btn-green {
+  background-color: lightgreen;
+  color: #333;
+}
+
+.btn-red {
+  background-color: darkred;
+  color: white;
+}
+
+/*Selector por ID: selecciona aquel elemento cuyo atributo Id corresponda al indicado en el selector*/
+
+#main-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.color-slategray {
+  color: slategray;
+}
+
+h2 {
+  font-size: 2rem;
+  border: 3px dashed peru;
+  color: purple;
+}
+
+h2 {
+  color: blue;
+  color: rgb(56, 100, 30);
+  color: rgba(56, 100, 30, 0.5);
+  color: #000000;
+  color: hsl(0, 46%, 12%);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+}
+
+.square-purple {
+  background: purple;
+}
+.square-peru {
+  background: peru;
+}
+.square-slategray {
+  background: slategray;
+}
+
+p {
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.wrapper {
+  width: 90vw;
+  border: 1px solid red;
+  height: 35vh;
+  margin: 2rem auto;
+  display: flex;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+div[class^='square'] {
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-red {
+  background-color: red;
+}
+.square-blue {
+  background-color: blue;
+}
+.square-purple {
+  background-color: purple;
+}
+.square-peru {
+  background-color: peru;
+}

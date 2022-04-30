@@ -1,0 +1,107 @@
+$primary: #965878;
+$secondary: slategray;
+$shadows: #acacac;
+$hover: skyblue;
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.bg-shadow {
+  background-color: $shadows;
+}
+
+.bg-hover {
+  background-color: $hover;
+}
+
+nav {
+  background-color: $primary;
+  display: flex;
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    li {
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.active {
+        border-bottom: 1px solid #333;
+      }
+    }
+  }
+}
+
+.koders-list {
+  padding: 0;
+  list-style: none;
+  li {
+    padding: 0.5rem 1rem;
+    &:nth-of-type(odd) {
+      background-color: $primary;
+    }
+    &:nth-of-type(even) {
+      background-color: $secondary;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+main {
+  border: 1px solid red;
+  section {
+    display: flex;
+    article {
+      display: flex;
+      border: 1px solid #ddd;
+      box-shadow: 3px 3px 3px $shadows;
+      img {
+        width: 50%;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  nav {
+    display: flex;
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+  img {
+    object-fit: cover;
+    width: 50%;
+  }
+}
+
+.main-nav {
+  color: white;
+  &__nav-list {
+    color: red;
+  }
+  &__nav-item {
+    color: peru;
+    &--active {
+      text-decoration: underline;
+    }
+  }
+}

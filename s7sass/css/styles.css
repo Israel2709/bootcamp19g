@@ -1,0 +1,141 @@
+.bg-primary {
+  background-color: #965878;
+}
+
+.bg-secondary {
+  background-color: slategray;
+}
+
+.bg-shadow {
+  background-color: #acacac;
+}
+
+.bg-hover {
+  background-color: skyblue;
+}
+
+nav {
+  background-color: #965878;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li.active {
+  border-bottom: 1px solid #333;
+}
+
+.koders-list {
+  padding: 0;
+  list-style: none;
+}
+
+.koders-list li {
+  padding: 0.5rem 1rem;
+}
+
+.koders-list li:nth-of-type(odd) {
+  background-color: #965878;
+}
+
+.koders-list li:nth-of-type(even) {
+  background-color: slategray;
+}
+
+.koders-list li:hover {
+  cursor: pointer;
+}
+
+main {
+  border: 1px solid red;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 3px 3px 3px #acacac;
+          box-shadow: 3px 3px 3px #acacac;
+}
+
+main section article img {
+  width: 50%;
+}
+
+main section article p {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav ul li {
+  font-size: 18px;
+}
+
+footer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+}
+
+.main-nav {
+  color: white;
+}
+
+.main-nav__nav-list {
+  color: red;
+}
+
+.main-nav__nav-item {
+  color: peru;
+}
+
+.main-nav__nav-item--active {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */

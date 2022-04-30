@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px 3px #acacac;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.card .btn {
+  height: 40px;
+  padding: 0.5rem 1rem;
+  transition: all 1s ease;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card:hover .btn {
+  width: 100%;
+  left: 0;
+}
+
+.loader {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+}
+
+.loader .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: peru;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 5px);
+}
+
+#toggle-animation:checked + .loader {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    background-color: #fff;
+  }
+  50% {
+    background-color: slategray;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #fff;
+  }
+}
